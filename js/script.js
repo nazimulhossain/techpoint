@@ -1,5 +1,5 @@
 const contactForm = async (name, email) => {
-  const response = await fetch('/.netlify/functions/nodemailer-send-msg.js', {
+  const response = await fetch('/.netlify/functions/nodemailer-send-msg', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
