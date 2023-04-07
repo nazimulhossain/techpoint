@@ -28,9 +28,9 @@ body {
   background-color: #f8f9fa;
 }
 
-.logo {
+/* .logo {
   height: 2.4rem;
-}
+} */
 
 .main-nav ul {
   list-style: none;
@@ -66,6 +66,12 @@ body {
 .main-nav-links.main-nav-links--last:hover,
 .main-nav-links.main-nav-links--last:active {
   background-color: #2e8bd8;
+}
+
+.main-nav-links.logo {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 1.2rem 0;
 }
 
 /* ******************* */
@@ -123,13 +129,13 @@ body {
   line-height: 1.06;
   color: #333;
   letter-spacing: -0.5px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .heading-description {
   font-size: 1.8rem;
   line-height: 1.6;
-  margin-bottom: 6.4rem;
+  margin-bottom: 8rem;
 }
 
 .hero {
@@ -140,14 +146,10 @@ body {
 
 .hero-image {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.14);
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
 }
 
-.btn {
-  display: flex;
-  gap: 2.4rem;
-}
 .btn-links {
   text-decoration: none;
 }
@@ -155,9 +157,10 @@ body {
 .btn-links:link,
 .btn-links:visited,
 .btn--form {
-  display: inline-block;
-  font-size: 1.8rem;
+  display: block;
+  font-size: 2rem;
   font-weight: 600;
+  text-align: center;
   background-color: #339af0;
   padding: 1.6rem 3.2rem;
   border-radius: 11px;
@@ -165,9 +168,13 @@ body {
   transition: all 0.3s;
 }
 
-.btn-links:hover,
-.btn-links:visited {
+.btn-links:hover {
   background-color: #2e8bd8;
+  transform: translateY(-2px);
+}
+
+.btn-links:active {
+  transform: translateY(0px);
 }
 
 .last-btn:link,
@@ -193,7 +200,8 @@ body {
 .services-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.4rem;
+  row-gap: 4.8rem;
+  column-gap: 2.4rem;
 }
 
 .services-info {
@@ -221,7 +229,7 @@ body {
 
 .services-link:link,
 .services-link:visited {
-  display: block;
+  display: inline-block;
   font-size: 1.4rem;
   color: #339af0;
   font-weight: 600;
@@ -347,7 +355,7 @@ label {
 
 input {
   padding: 1.6rem;
-
+  font-size: 1.8rem;
   width: 100%;
   background-color: #ebf5fe;
   border-radius: 9px;
@@ -355,6 +363,20 @@ input {
 }
 
 input::placeholder {
+  font-size: 1.8rem;
+}
+
+textarea {
+  resize: none;
+  padding: 1.6rem;
+  font-size: 1.8rem;
+  width: 100%;
+  background-color: #ebf5fe;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+textarea::placeholder {
   font-size: 1.8rem;
 }
 
@@ -404,10 +426,10 @@ input::placeholder {
   grid-template-columns: 2fr 2fr 1fr 1fr;
   gap: 4.8rem;
 }
-.footer-logo {
+/* .footer-logo {
   height: 2.4rem;
   margin-bottom: 4rem;
-}
+} */
 
 .logo-col {
   display: flex;
@@ -461,4 +483,13 @@ input::placeholder {
 .footer-nav li {
   list-style: none;
   margin-bottom: 1.2rem;
+}
+.author-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.author-dev {
+  margin: 2.4rem;
+  font-size: 1.4rem;
 }

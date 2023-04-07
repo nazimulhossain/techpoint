@@ -133,3 +133,27 @@ Medium: 11px
 .margin-bottom-lg {
   margin-bottom: 9.6rem;
 }
+
+.alert {
+  width: 100%;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.6rem 3.2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.alert--success {
+  background-color: #20bf6b;
+}
+
+.alert--error {
+  background-color: #eb4d4b;
+}
+
+.email-message {
+  text-align: center;
+  margin: 100px auto;
+}

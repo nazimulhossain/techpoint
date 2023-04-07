@@ -21,20 +21,21 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="/js/script.js" defer></script>
+    <script src="/js/script.js" type="module"></script>
     <title>Techpoint - Building Plan,Construction & Survey</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="#"><img class="logo" src="/img/omnifood-logo.png" /></a>
+      <!-- <img class="logo" src="/img/omnifood-logo.png" /> -->
+      <a href="/" class="main-nav-links logo">Techpoint</a>
       <nav class="main-nav">
         <ul>
           <li><a href="#" class="main-nav-links">Home</a></li>
           <li><a href="#services" class="main-nav-links">Services</a></li>
           <li><a href="#choose-us" class="main-nav-links">About us</a></li>
-          <li><a href="#works" class="main-nav-links">Contact us</a></li>
+          <li><a href="#contact" class="main-nav-links">Contact us</a></li>
           <li>
-            <a href="#contact" class="main-nav-links main-nav-links--last"
+            <a href="#meeting" class="main-nav-links main-nav-links--last"
               >Speak with us</a
             >
           </li>
@@ -54,12 +55,12 @@
             </h1>
             <p class="heading-description">
               Techpoint platform is the foundation for real estate innovation.
-              We unlock speed, efficiency and accuracy for proptech companies
-              and their lenders
+              We help you design your dream home easily with customized House
+              Plan design, Home Designs.
             </p>
             <div class="btn">
-              <a href="#" class="btn-links">Speak with us</a>
-              <a href="#" class="btn-links last-btn">Book a demo</a>
+              <a href="#meeting" class="btn-links">Speak with us</a>
+              <!-- <a href="#" class="btn-links last-btn">Book a demo</a> -->
             </div>
           </div>
           <div class="hero-image-box">
@@ -78,7 +79,11 @@
           </header>
           <div class="services-card">
             <div class="services-info">
-              <img class="services-img" src="/img/1.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/house-designs.jpg"
+                alt="house designs"
+              />
               <h3 class="heading-tertiary">House Designs</h3>
               <p class="services-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -87,7 +92,11 @@
               <a href="#" class="services-link">Learn more &rarr;</a>
             </div>
             <div class="services-info">
-              <img class="services-img" src="/img/2.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/floor-plans.jpg"
+                alt="floor plans"
+              />
               <h3 class="heading-tertiary">Floor Plans</h3>
               <p class="services-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -96,7 +105,11 @@
               <a href="#" class="services-link">Learn more &rarr;</a>
             </div>
             <div class="services-info">
-              <img class="services-img" src="/img/3.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/structural-drawings.jpg"
+                alt="structural drawings of building"
+              />
               <h3 class="heading-tertiary">Structural Drawings</h3>
               <p class="services-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -105,7 +118,11 @@
               <a href="#" class="services-link">Learn more &rarr;</a>
             </div>
             <div class="services-info">
-              <img class="services-img" src="/img/4.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/3d-elevation.jpg"
+                alt="3d elevation"
+              />
               <h3 class="heading-tertiary">3D Elevations</h3>
               <p class="services-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -114,7 +131,11 @@
               <a href="#" class="services-link">Learn more &rarr;</a>
             </div>
             <div class="services-info">
-              <img class="services-img" src="/img/5.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/3d-floor-plans.jpg"
+                alt="3d floor plans"
+              />
               <h3 class="heading-tertiary">3D Floor Plans</h3>
               <p class="services-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
@@ -123,7 +144,11 @@
               <a href="#" class="services-link">Learn more &rarr;</a>
             </div>
             <div class="services-info">
-              <img class="services-img" src="/img/6.jpg" />
+              <img
+                class="services-img"
+                src="/img/services/interior-designs.jpg"
+                alt="interior designs"
+              />
               <h3 class="heading-tertiary">Interior Designs</h3>
               <p class="services-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -286,7 +311,7 @@
           </div>
         </div>
       </section>
-      <section class="cta-section" id="contact">
+      <section class="cta-section" id="meeting">
         <div class="container">
           <div class="cta-box">
             <div class="cta-text-box">
@@ -300,7 +325,12 @@
                 <form class="cta-form">
                   <div>
                     <label for="name">Full Name</label><br />
-                    <input type="text" id="name" placeholder="John Smith" />
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="John Smith"
+                      required
+                    />
                   </div>
                   <div>
                     <label for="email">Email</label><br />
@@ -308,11 +338,25 @@
                       type="email"
                       id="email"
                       placeholder="me@example.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="mobile">Mobile</label><br />
+                    <input
+                      type="tel"
+                      id="mobile"
+                      placeholder="9999999999"
+                      maxlength="10"
                     />
                   </div>
                   <div>
                     <label for="message">Message</label><br />
-                    <input type="text" aria-multiline="4" id="message" />
+                    <textarea
+                      id="message"
+                      placeholder="Type your message...."
+                      required
+                    ></textarea>
                   </div>
                   <button class="btn--form">Send</button>
                 </form>
@@ -323,12 +367,12 @@
         </div>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer-section" id="contact">
       <div class="container footer-grid">
         <div class="logo-col">
-          <a href="#">
-            <img src="/img//omnifood-logo.png" class="footer-logo" />
-          </a>
+          <a href="/" class="main-nav-links logo">Techpoint</a>
+          <!-- <img src="/img//omnifood-logo.png" class="footer-logo" /> -->
+
           <div class="social-links">
             <a href="#" class="footer-links"
               ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
@@ -341,7 +385,7 @@
             ></a>
           </div>
           <p class="copyright">
-            Copyright &copy; 2027 by TechPoint, Inc. All rights reserved.
+            Copyright &copy; 2023 by TechPoint, Inc. All rights reserved.
           </p>
         </div>
         <div class="nav-col">
@@ -377,5 +421,8 @@
         class="icon-up-arrow"
       ></ion-icon
     ></a>
+    <div class="author-box">
+      <p class="author-dev">Design and Developed by Nazimul Hossain</p>
+    </div>
   </body>
 </html>
