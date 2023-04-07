@@ -431,6 +431,21 @@ textarea::placeholder {
   margin-bottom: 4rem;
 } */
 
+.footer-title:link,
+.footer-title:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4rem;
+}
+
+.footer-title-links:hover,
+.footer-title-links:active {
+  color: #2e8bd8;
+}
+
 .logo-col {
   display: flex;
   flex-direction: column;

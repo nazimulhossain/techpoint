@@ -160,6 +160,10 @@
     width: 6.4rem;
     height: 6.4rem;
   }
+
+  .sticky .main-header {
+    height: 9rem;
+  }
 }
 
 /**************************/
