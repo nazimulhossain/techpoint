@@ -28,7 +28,6 @@ const contactForm = async (name, email, message, mobile) => {
       // formEl.insertAdjacentElement('beforeend', newDiv);
     }
   } catch (err) {
-    console.log(err);
     showAlert('error', 'Please try again!');
    
   }
