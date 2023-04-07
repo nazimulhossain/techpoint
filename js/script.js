@@ -29,7 +29,6 @@ const contactForm = async (name, email, message, mobile) => {
     }
   } catch (err) {
     showAlert('error', 'Please try again!');
-   
   }
 };
 
@@ -57,6 +56,39 @@ if (mobileNav) {
   });
 }
 
+///////////////////////////////////////////////////////////
+// Smooth scrolling animation
+
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+
+    // Scroll back to top
+    if (href === '#')
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+
+    // Scroll to other links
+    if (href !== '#' && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Close mobile naviagtion
+    if (link.classList.contains('main-nav-links')) {
+      headerEl.classList.toggle('nav-open');
+    }
+  });
+});
+
+///////////////////////////////////////////////////////////
+// Sticky navigation
+
 const sectionEl = document.querySelector('.hero-section');
 
 const observer = new IntersectionObserver(
@@ -66,7 +98,6 @@ const observer = new IntersectionObserver(
     if (!ent.isIntersecting) {
       document.body.classList.add('sticky');
       document.body.classList.remove('hidden');
-      headerEl.classList.remove('nav-open');
     } else {
       document.body.classList.remove('sticky');
       document.body.classList.add('hidden');
@@ -75,7 +106,7 @@ const observer = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: '-70px',
+    rootMargin: '-80px',
   }
 );
 
