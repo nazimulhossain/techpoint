@@ -104,13 +104,13 @@
     flex-direction: column;
     align-items: center;
 
-    gap: 3.2rem;
+    gap: 4.8rem;
   }
 
   .main-nav-links:link,
   .main-nav-links:visited {
-    font-size: 3.6rem;
-
+    font-size: 4.4rem;
+    text-transform: uppercase;
     padding: 1.6rem 3.2rem;
   }
 
@@ -124,7 +124,7 @@
 }
 
 /**************************/
-/* BELOW 704px (Smaller Tablet) */
+/* BELOW 760px (Smaller Tablet) */
 /**************************/
 @media (max-width: 48em) {
   html {
@@ -133,13 +133,12 @@
 
   .main-nav-links:link,
   .main-nav-links:visited {
-    font-size: 5.2rem;
+    font-size: 6.2rem;
     padding: 2.4rem 4.8rem;
   }
 
   .icon-mobile-nav {
-    width: 6.4rem;
-    height: 6.4rem;
+    font-size: 8.6rem;
   }
 }
 
@@ -151,14 +150,13 @@
     font-size: 25%;
   }
 
+  .main-nav ul {
+    gap: 6.4rem;
+  }
+
   .main-nav-links:link,
   .main-nav-links:visited {
-    font-size: 5.2rem;
-    padding: 2.4rem 4.8rem;
-  }
-  .icon-mobile-nav {
-    width: 6.4rem;
-    height: 6.4rem;
+    font-size: 6.2rem;
   }
 
   .sticky .main-header {
@@ -176,12 +174,14 @@
 
   .main-nav-links:link,
   .main-nav-links:visited {
-    font-size: 5.2rem;
-    padding: 2.4rem 4.8rem;
+    font-size: 7.4rem;
+  }
+
+  .main-nav ul {
+    gap: 8rem;
   }
 
   .icon-mobile-nav {
-    width: 6.4rem;
-    height: 6.4rem;
+    font-size: 11rem;
   }
 }
