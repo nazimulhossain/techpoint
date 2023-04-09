@@ -499,6 +499,10 @@ textarea::placeholder {
   margin-bottom: 1.2rem;
 }
 
+.icon-up-arrow {
+  font-size: 4.8rem;
+}
+
 .author-box {
   display: flex;
   justify-content: flex-end;

@@ -107,8 +107,8 @@
     gap: 4.8rem;
   }
 
-  .main-nav-links:link,
-  .main-nav-links:visited {
+  .main-nav .main-nav-links:link,
+  .main-nav .main-nav-links:visited {
     font-size: 4.4rem;
     text-transform: uppercase;
     padding: 1.6rem 3.2rem;
@@ -131,14 +131,24 @@
     font-size: 31.25%;
   }
 
-  .main-nav-links:link,
-  .main-nav-links:visited {
+  .main-nav-links.logo {
+    font-size: 3.6rem;
+  }
+
+  .main-nav .main-nav-links:link,
+  .main-nav .main-nav-links:visited {
     font-size: 6.2rem;
     padding: 2.4rem 4.8rem;
   }
 
   .icon-mobile-nav {
     font-size: 8.6rem;
+  }
+
+  .icon-up-arrow {
+    font-size: 8rem;
+    bottom: 30px;
+    right: 30px;
   }
 }
 
@@ -154,11 +164,6 @@
     gap: 6.4rem;
   }
 
-  .main-nav-links:link,
-  .main-nav-links:visited {
-    font-size: 6.2rem;
-  }
-
   .sticky .main-header {
     height: 9rem;
   }
@@ -172,8 +177,12 @@
     font-size: 19%;
   }
 
-  .main-nav-links:link,
-  .main-nav-links:visited {
+  .main-nav-links.logo {
+    font-size: 4.4rem;
+  }
+
+  .main-nav .main-nav-links:link,
+  .main-nav .main-nav-links:visited {
     font-size: 7.4rem;
   }
 
