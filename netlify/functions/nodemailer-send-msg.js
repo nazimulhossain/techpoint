@@ -7,9 +7,11 @@ exports.handler = async (event) => {
 
     const firstName = name.split(' ')[0];
     const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT,
-      secure: false,
+      // host: process.env.EMAIL_HOST,
+      // port: process.env.EMAIL_PORT,
+      // secure: false,
+      service: 'gmail',
+      host: 'smtp.gmail.com',
       logger: true,
       auth: {
         user: process.env.EMAIL_USERNAME,
