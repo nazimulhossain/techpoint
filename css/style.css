@@ -402,7 +402,7 @@ textarea::placeholder {
       rgba(101, 125, 214, 0.282),
       rgba(58, 86, 184, 0.282)
     ),
-    url('./img/cta-image.jpg');
+    url('/img/cta-image.jpg');
   background-size: cover;
 }
 
