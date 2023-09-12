@@ -157,7 +157,7 @@
 /**************************/
 @media (max-width: 31.85em) {
   html {
-    font-size: 25%;
+    font-size: 30%;
   }
 
   .main-nav ul {
@@ -166,6 +166,72 @@
 
   .sticky .main-header {
     height: 9rem;
+  }
+  .hero-section {
+    padding-top: 0.5rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image-box {
+    grid-row: 1 / -1;
+  }
+
+  .heading-description {
+    font-size: 2.4rem;
+  }
+
+  .btn-links:link,
+  .btn-links:visited,
+  .btn--form {
+    font-size: 3.2rem;
+    padding: 2.4rem 3.6rem;
+  }
+  .services-card {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+  .services-text {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .image-box img {
+    width: 90%;
+    border-radius: 9px;
+  }
+
+  .cta-box {
+    grid-template-columns: 1fr;
+  }
+  .cta-description {
+    font-size: 2.4rem;
+  }
+  label {
+    font-size: 2rem;
+  }
+  input {
+    font-size: 2.4rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-links:link,
+  .footer-links:visited {
+    font-size: 2rem;
+  }
+  .contacts {
+    font-size: 2rem;
+  }
+  .copyright {
+    font-size: 1.8rem;
+  }
+  .author-dev {
+    font-size: 1.8rem;
   }
 }
 
