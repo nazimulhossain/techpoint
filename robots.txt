@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /netlify/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.gitignore
+Sitemap: https://www.tecpoint.in/sitemap.xml

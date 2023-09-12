@@ -22,7 +22,7 @@ exports.handler = async (event) => {
     const mailOptions = {
       from: `"Techpoint Support" <${process.env.EMAIL_FROM}>`, // sender address
       to: email, // list of receivers
-      bcc: process.env.EMAIL_USERNAME,
+      bcc: process.env.EMAIL_BCC,
       subject: 'We have received your message', // Subject line
       text: `Hello ${firstName}, Thank you for contacting us. Our team will respond within 24 hours. `, // plain text body
       html: `
