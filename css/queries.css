@@ -200,6 +200,10 @@
     font-size: 2rem;
     line-height: 1.4;
   }
+
+  .step-description {
+    font-size: 2rem;
+  }
   .image-box img {
     width: 90%;
     border-radius: 9px;
@@ -240,7 +244,7 @@
 /**************************/
 @media (max-width: 26.25em) {
   html {
-    font-size: 19%;
+    font-size: 23%;
   }
 
   .main-nav-links.logo {
