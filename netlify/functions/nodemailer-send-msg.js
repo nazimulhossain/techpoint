@@ -10,8 +10,8 @@ exports.handler = async (event) => {
       // host: process.env.EMAIL_HOST,
       // port: process.env.EMAIL_PORT,
       // secure: false,
-      service: 'gmail',
-      host: 'smtp.gmail.com',
+      service: process.env.EMAIL_SERVICE,
+      host: process.env.EMAIL_HOST,
       logger: true,
       auth: {
         user: process.env.EMAIL_USERNAME,
